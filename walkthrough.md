@@ -212,7 +212,7 @@ jack@boringbox:~$
 
 After some initial enumeration we see a note from admin at /opt/urgent.txt: 
 ```
-jack@boringbox:~$ cat /opt/urgent,txt
+jack@boringbox:~$ cat /opt/urgent.txt
 Hey guys, after the hack some files have been put into /var/www and when I try to remove them they wont, even though I am root. Please go through the pcap file in /opt and help me fix the server. And I temporarily blocked his access to the backdoor by using iptables. The cleanup of the server is still incomplete I need to start by deleting these files first.
 -admin
 ```
