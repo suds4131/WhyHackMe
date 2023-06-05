@@ -328,7 +328,8 @@ Taking a look at apache log file we see that when we use `http://<MACHINE_IP>/di
 3. Httponly flag should always be set to true to mitigate attacks like session hijacking/cokie stealing using XSS.
 4. Always check if any cryptography you are using is obsolete.
 5. Decrypting HTTPS traffic using wireshark.
-Note: If the key exchange was done by DHE or EDHE, then there isn't any way to decrypt traffic even though you have a private key.
+
+Note: If the key exchange was done by DHE or EDHE, then there isn't any way to decrypt traffic even though you have the server's private key.
 
 ## Extra(Do it if you want to??):-
 
