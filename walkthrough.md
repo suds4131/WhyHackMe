@@ -1,4 +1,4 @@
-# Exploitation Guide for BoringBox
+# Exploitation Guide for WhyHackMe
 
 ## Enumeration
 
