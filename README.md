@@ -1,6 +1,6 @@
 # WhyHackMe
 
-Room Link: ![https://tryhackme.com/room/whyhackme](https://tryhackme.com/room/whyhackme)
+Room Link: https://tryhackme.com/room/whyhackme
 
 ## Enumeration
 
